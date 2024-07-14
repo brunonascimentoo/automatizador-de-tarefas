@@ -4,6 +4,7 @@
 #repetir processo
 
 import pyautogui as pgui
+import pandas as pd
 import time
 
 
@@ -27,3 +28,6 @@ press('enter')
 left_click(x=640, y=368)
 press('enter')
 
+#ler base de dados
+table = pd.read_excel('base_de_dados/base_dados.xlsx')
+print(table)
