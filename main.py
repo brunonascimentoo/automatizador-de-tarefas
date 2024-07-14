@@ -4,13 +4,26 @@
 #repetir processo
 
 import pyautogui as pgui
+import time
 
 
+timer = time
 
-
-click = pgui.click #click na tela
+left_click = pgui.leftClick #click na tela
 hotkey = pgui.hotkey #clica uma combição de teclas ex: ctrl + c 
-move_to = pgui.moveTo # move o mouse para local indicadohello world
+move_to = pgui.moveTo # move o mouse para local indicado
 pause = pgui.PAUSE = 0.5 # pause de x segundos antes de executar algum comando
-write = pgui.write
+write = pgui.write # escreve texto
+press = pgui.press # pressiona tecla
+
+#Inicio abre crud no navegador
+press('win')
+write('automatizador')
+press('enter')
+timer.sleep(5)
+move_to(640, 368)
+left_click(x=640, y=368)
+press('enter')
+left_click(x=640, y=368)
+press('enter')
 
