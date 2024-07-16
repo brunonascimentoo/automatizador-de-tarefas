@@ -33,9 +33,12 @@ table = pd.read_excel('base_de_dados/base_dados.xlsx')
 print(table)
 
 timer.sleep(2)
-left_click(x=963, y=359)
+
+move_to(x=963, y=359)
+left_click()
 pause
-left_click(x=510, y=357)
+move_to(x=510, y=357)
+left_click()
 name = write('nome')
 press('tab')
 last_name = write('last_name')
