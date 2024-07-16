@@ -31,3 +31,17 @@ press('enter')
 #ler base de dados
 table = pd.read_excel('base_de_dados/base_dados.xlsx')
 print(table)
+
+timer.sleep(2)
+left_click(x=963, y=359)
+pause
+left_click(x=510, y=357)
+name = write('nome')
+press('tab')
+last_name = write('last_name')
+press('tab')
+date_of_birth = write('26/11/1996')
+press('tab')
+training = write('training')
+move_to(x=1476, y=553)
+left_click()
