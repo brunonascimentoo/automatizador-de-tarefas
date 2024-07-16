@@ -25,7 +25,7 @@ timer.sleep(5)
 move_to(640, 368)
 left_click(x=640, y=368)
 press('enter')
-left_click(x=640, y=368)
+left_click(x=417, y=322)
 press('enter')
 
 #ler base de dados
@@ -45,3 +45,4 @@ press('tab')
 training = write('training')
 move_to(x=1476, y=553)
 left_click()
+press('enter')
